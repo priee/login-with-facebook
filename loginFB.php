@@ -14,8 +14,8 @@
 	use Facebook\HttpClients\FacebookHttpable;
 	
 	// Edit Following 2 Lines
-	FacebookSession::setDefaultApplication( 'Paste_Application_ID_Here','Paste_Application_Client_Secret_Here' );
-	$helper = new FacebookRedirectLoginHelper('Paste_Application_Callback_URL_Here');
+	FacebookSession::setDefaultApplication( '250905448998532','fbfcac81c692d2b141c38901827a10b4' );
+	$helper = new FacebookRedirectLoginHelper('https://priee.github.io/login-with-facebook');
 	
 	try {$session = $helper->getSessionFromRedirect();} catch( FacebookRequestException $ex ) {} catch( Exception $ex ) {}
 	if ( isset( $session ) ) 
