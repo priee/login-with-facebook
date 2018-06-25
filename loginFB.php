@@ -15,7 +15,7 @@
 	
 	// Edit Following 2 Lines
 	FacebookSession::setDefaultApplication( '250905448998532','fbfcac81c692d2b141c38901827a10b4' );
-	$helper = new FacebookRedirectLoginHelper('https://priee.github.io/login-with-facebook');
+	$helper = new FacebookRedirectLoginHelper('https://priee.github.io/login-with-facebook/');
 	
 	try {$session = $helper->getSessionFromRedirect();} catch( FacebookRequestException $ex ) {} catch( Exception $ex ) {}
 	if ( isset( $session ) ) 
